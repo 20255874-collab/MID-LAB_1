@@ -1,80 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset ="utf-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale-1">
-        <title></title>
-    </head>
-    <body>
-        <!-- FORMS -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #133449;
+            margin: 0;
+            padding: 20px;
+        }
 
-    </body>
-         
-         <form>
-            What are the color in philippines?
-          <br><input type=""placeholder="ENTER YOU ANSWER"><br>
-          <br>
-            how many color are in rainbow?
-          <br><input type=""placeholder="ENTER YOU ANSWER"><br>
-          <br>
-            which hockey team has won the most stanley cups?
-          <br><input type=""placeholder="ENTER YOU ANSWER"><br>
-          <br>
-            who his the shooter in all time nba? 
-          <br><input type=""placeholder="ENTER YOU ANSWER"><br>
-          <br>
-            <br><hr>
+        .form-container {
+            background: #23616ce6;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
 
-            What is the last book in the Twilight novel series?<br>
-            <input type="radio"> Breaking Dawn<br>
-            <input type="radio"  > Life And Death: Twilight Reimagined<br>
-            <input type="radio"  > Midnight Sun
-            <br>
-            <br>
-            Who is the most followed person on Instagram?<br>
-            <input type="radio" > Kylie Jennerbr><br>
-            <input type="radio" > Taylor Swift<br>
-            <input type="radio"  > Cristiano Ronaldo
-            <br>
-            <br>
-            Who was the first member of One Direction to leave in 2015?<br>
-            <input type="radio" > Harry Styles<br>
-            <input type="radio"  > Zayn Malik<br>
-            <input type="radio"  > Niall Horan
-            <br>
-            <br><hr>
-             1. what do you most use in socmed?
-            <br><input type="checkbox" name="what do you most use in socmed">
-            tiktok
-            <br><input type="checkbox" name="what do you most use in socmed">
-            facebook
-            <br><input type="checkbox" name="what do you most use in socmed">
-            instagram 
-            <br><input type="checkbox" name="what do you most use in socmed">
-            youtube
-            <br>
-            <br>
-            2. what you can drive?
-            <br><input type="checkbox" name="what do you most use in socmed">
-            motocycle 
-            <br><input type="checkbox" name="what do you most use in socmed">
-            car
-            <br><input type="checkbox" name="what do you most use in socmed">
-            truck
-            <br><input type="checkbox" name="what do you most use in socmed">
-            tricycle 
-            <br>
-            <br>
-            2. what is your favorite color?
-            <br><input type="checkbox" name="what do you most use in socmed">
-            blue
-            <br><input type="checkbox" name="what do you most use in socmed">
-            pink
-            <br><input type="checkbox" name="what do you most use in socmed">
-            black
-            <br><input type="checkbox" name="what do you most use in socmed">
-            yellow
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-            <center> <button>submit</button></center>
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
 
-         </form>
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .options {
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>QUIZ</h2>
+    <form>
+        <label>What are the philippines flag colors?</label>
+        <input type="text" placeholder="Enter your answer">
+
+        <label>How many colors are in the rainbow?</label>
+        <input type="text" placeholder="Enter your answer">
+
+        <label>Which hockey team has won the most Stanley Cups?</label>
+        <input type="text" placeholder="Enter your answer">
+
+        <label>Who is the all-time NBA shooter?</label>
+        <input type="text" placeholder="Enter your answer">
+
+        <hr>
+
+        <label>What is the last book in the Twilight novel series?</label>
+        <div>
+            <input type="radio" name="twilight"> Breaking Dawn <br>
+            <input type="radio" name="twilight"> Life And Death: Twilight Reimagined <br>
+            <input type="radio" name="twilight"> Midnight Sun
+        </div>
+
+        <label>Who is the most followed person on Instagram?</label>
+        <div>
+            <input type="radio" name="instagram"> Kylie Jenner <br>
+            <input type="radio" name="instagram"> Taylor Swift <br>
+            <input type="radio" name="instagram"> Cristiano Ronaldo
+        </div>
+
+        <label>Who was the first member of One Direction to leave in 2015?</label>
+        <div>
+            <input type="radio" name="onedirection"> Harry Styles <br>
+            <input type="radio" name="onedirection"> Zayn Malik <br>
+            <input type="radio" name="onedirection"> Niall Horan
+        </div>
+
+        <hr>
+
+        <label>1. What do you most use in social media?</label>
+        <div>
+            <input type="checkbox"> TikTok <br>
+            <input type="checkbox"> Facebook <br>
+            <input type="checkbox"> Instagram <br>
+            <input type="checkbox"> YouTube
+        </div>
+
+        <label>2. What can you drive?</label>
+        <div>
+            <input type="checkbox"> Motorcycle <br>
+            <input type="checkbox"> Car <br>
+            <input type="checkbox"> Truck <br>
+            <input type="checkbox"> Tricycle
+        </div>
+
+        <label>3. What is your favorite color?</label>
+        <div>
+            <input type="checkbox"> Blue <br>
+            <input type="checkbox"> Pink <br>
+            <input type="checkbox"> Black <br>
+            <input type="checkbox"> Yellow
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
